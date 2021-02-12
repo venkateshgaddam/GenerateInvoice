@@ -43,9 +43,9 @@ namespace GenerateInvoice
                 Console.WriteLine();
             }
             Console.WriteLine($"Total Items : {products_count}");
-            Console.WriteLine($"SubTotal: {total_amount}");
-            Console.WriteLine($"Value Added Tax: {Value_Added_Tax}");
-            Console.WriteLine($"Additional Taxes: {import_taxes}");
+            Console.WriteLine($"SubTotal : {total_amount}");
+            Console.WriteLine($"Value Added Tax : {Value_Added_Tax}");
+            Console.WriteLine($"Additional Taxes : {import_taxes}");
             Console.WriteLine($"Total Amount: {import_taxes + Value_Added_Tax + total_amount}");
         }
         private double CalculateImportTaxes(double total_amount, Product product_details)
