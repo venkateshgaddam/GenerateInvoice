@@ -27,7 +27,10 @@ namespace GenerateInvoice
         private static IConfigurationRoot ConfigureServices()
         {
             return new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
-                                            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).Build();
+                                             .AddJsonFile("appsettings.json", 
+                                                           optional: true,
+                                                           reloadOnChange: true)
+                                             .Build();
         }
     }
 }
